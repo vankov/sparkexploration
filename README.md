@@ -1,5 +1,5 @@
-# sparkexporation
-I could find a how to run a full Spark NLP pipeline in Scala, so created it using PySpark. The problem was that some of the annotators such as Tokenizer were permanently crashing when created by Scala, either when running by sbt or in Spylon. Perhaps I am just doing something wrong but decided not to spend to much time on this and did the pipiline in Python.
+# sparkexploration
+I couldn't find a how to run a full Spark NLP pipeline in Scala, so created it using PySpark. The problem was that some of the annotators such as Tokenizer were permanently crashing when created by Scala, either when running by sbt or in Spylon. Perhaps I am just doing something wrong but decided not to spend to much time on this and did the pipiline in Python.
 
 There are three notebooks - two Python and one Scala one. The "Python Create TF Graph.ipynb" is used to generate a TF graph of a very simple feed-forward model. "Python Preprocess.ipynb" runs a Spark NLP pipeline on the "AGNews data set fro" new stories text classification dataset, incliduing sentence detection, tokenization, lemmalization, stop words removal, normalization, vectorization and td-idf computation. The dataset is annotated using the pipeline and then stored on the hard drive. 
 
